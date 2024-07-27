@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Google Survey Form</h1>
+    <form id="form" >
+        <div class="form-control">
+            <label for="name" id="lable-name">Name</label>
+            <input type="text" id="name" placeholder="Enter your Name">
+        </div>
+        <div class="form-control">
+            <label for="email" id="lable-email">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email">
+        </div>
+        <div class="form-control">
+            <label for="age" id="lable-age">Age</label>
+            <input type="text" id="age" placeholder="Enter your Age">
+        </div>
+        <div class="form-control">
+            <label for="role" id="lable-role">Role</label>
+            <select name="role" id="role">
+                <option value="Student">Student</option>
+                <option value="Intern">Intern</option>
+                <option value="Master">Master</option>
+                <option value="Professional">Professional</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>Would you recomend google survey toyour friend?</label>
+            <label for="recomend-1">
+                <input type="radio" id="recomend-1" name="recomend">Yes
+                <input type="radio" id="recomend-2" name="recomend">No
+                <input type="radio" id="recomend-3" name="recomend">May be
+            </label>
+        </div>
+        <div class="form-control">
+            <label>Languages and Framework Known
+                <small>(Check all that apply)</small>
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp-1">C
+                <input type="checkbox" name="inp-2">C++
+                <input type="checkbox" name="inp-3">C#
+                <input type="checkbox" name="inp-4">Java
+                <input type="checkbox" name="inp-5">Python
+                <input type="checkbox" name="inp-6">Javascript
+                <input type="checkbox" name="inp-7">React
+                <input type="checkbox" name="inp-8">Angular
+                <input type="checkbox" name="inp-9">Django
+                <input type="checkbox" name="inp-10">Spring
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="comment">Any comments or suggestions</label>
+            <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+        </div>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+</body>
+</html>
