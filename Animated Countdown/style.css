@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h4{
+    font-size: 20px;
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+.counter {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+}
+
+.counter .hide{
+    transform: translate(-50%, -50%) scale(0);
+    animation: hide 0.2s ease-out;
+}
+
+@keyframes hide {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0);
+    }
+    
+}
+
+
+.final {
+    position: fixed;
+    
+}
